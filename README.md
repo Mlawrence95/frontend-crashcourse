@@ -213,6 +213,22 @@ To include bootstrap in your HTML code, simply add the following to the bottom o
 ```
 
 What these do is link in a bunch of great CSS defaults for HTML you write, and allow you to copy and paste components from Bootstrap's documentation and have them work off the shelf. 
-Consider the [navbar example](https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/) from their documentation. If we use our browser's inspection tool, we can snip out the html and it should just work on our own site.
+
+
+##### Bootstrap Themes and Components
+
+Bootstrap has many [great examples](https://getbootstrap.com/docs/5.0/examples/) of user interfaces and components that can be pieced together for your demos. Consider the [navigation bar theme example](https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/) from their documentation. If we use our browser's inspection tool, we can snip out the html and it should just work on our own site.
 
 ![taking code from bootstrap](./images/bootstrap_navbar.png)
+
+Additionally, Bootstrap has any examples of individual components that are meant to be copied and pasted. Consider the [forms page](https://getbootstrap.com/docs/5.0/forms/overview/#overview), where there are great forms ready for you to use.
+
+![form example](./images/forms.png)
+
+
+
+## Wrapping things up
+
+These ideas are building blocks. When making a demo or proof of concept, you shouldn't feel like you have to use the most complex solution out there - copying some bootstrap code and modying it for your own purposes is often more than enough. If you want to make a more serious application, the HTML, CSS, and JS will always be available to build off of. 
+
+Happy coding!
