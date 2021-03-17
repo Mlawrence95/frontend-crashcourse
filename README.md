@@ -231,4 +231,6 @@ Additionally, Bootstrap has any examples of individual components that are meant
 
 These ideas are building blocks. When making a demo or proof of concept, you shouldn't feel like you have to use the most complex solution out there - copying some bootstrap code and modying it for your own purposes is often more than enough. If you want to make a more serious application, the HTML, CSS, and JS will always be available to build off of. 
 
+If you're curious and want to learn more, a next step for making useful sites is to have a backend. Python's flask allows you to populate your HTML file dynamically using just about any code you can think of. Want to insert information from a database? Show predictions from machine learning models? Render a random cat picture every day? This is a great way to get started.
+
 Happy coding!
