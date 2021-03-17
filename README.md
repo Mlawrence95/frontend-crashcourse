@@ -160,5 +160,59 @@ p {
 }
 ```
 
-## Bootstrap: Building a great demo as lazily as possible
+### Javascript briefly
 
+Javascript, or js, is a programming language that allows you to easily create interactive webpages by modifying the DOM in real time. In other words, you can change the HTML elements and their styling on the fly quite easily. 
+
+A popular way of modifying elements in the DOM is by referencing the ID or class of the element(s) you'd like to change. JS allows you to then modify attributes on these elements, such as changing color or hiding some elements when someone clicks on an elements. JS can be ran in the inspect console of most popular web browsers. Here's an example of using js to change the DOM on the fly:
+
+##### Before
+![Before image](./images/js_before.png)
+
+#####After
+![After image](./images/js_after.png)
+
+Notice that the JS code directly grabs the DOM by using the `document` variable, which then allows you to modify the element that has `id` of `myID`.
+
+Javascript code should usually be placed in a separate file and linked into your HTML file. Consider the following file, `myFunctions.js` that takes the above code and makes it a separate JS function:
+
+```javascript
+function changeToPurple(){
+  document.getElementById("myID").style.color = "#96799F"
+}
+```
+
+
+##### Including JS in HTML for interactivity
+
+We can link this into the HTML like by wrapping it in
+`<script>` tags like,
+
+```html
+<script src="myFunctions.js"></script>
+```
+
+Additionally, we can make the page interactive by having this function run when a user clicks an element, which HTML supports with the `onclick` attribute, like this:
+
+```html
+<p id="myID" onclick="changeToPurple()">divs and classes are very useful!</p>
+```
+
+### Bootstrap: Building a great demo as lazily as possible
+
+This is where the fun starts. HTML, CSS, and JS are great for understanding how things work, and there are times where you must build your own custom frontend components, but that takes a lot of time when you want to make a prototype. [Bootstrap](https://getbootstrap.com/) is a CSS + JS library and component library that you can use to piece together a prototype very rapidly.
+
+
+##### Including bootstrap in your own code
+To include bootstrap in your HTML code, simply add the following to the bottom of your HTML body (these are on the front page of Bootstrap's website. Grab the newest links there if necessary).
+```html
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+```
+
+What these do is link in a bunch of great CSS defaults for HTML you write, and allow you to copy and paste components from Bootstrap's documentation and have them work off the shelf. 
+Consider the [navbar example](https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/) from their documentation. If we use our browser's inspection tool, we can snip out the html and it should just work on our own site.
+
+![taking code from bootstrap](./images/bootstrap_navbar.png)
