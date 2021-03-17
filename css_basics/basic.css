@@ -1,0 +1,23 @@
+/* use # to select IDs and . to select classes */
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+#myID {
+  color: red;
+}
+
+.myClass {
+  text-align: center;
+}
